@@ -1,5 +1,8 @@
 # *Covid Analysis*
 
+
+![image](https://github.com/user-attachments/assets/38a8a0fb-8861-479e-8a63-e2c74b24749a)
+
 ## 1. Overview
 #### Description
 This project involves comprehensive analysis and visualization of global COVID-19 data, mostly focusing on global numbers, mortality rates, death trends, overall impact by location and more. This work showcases skills in __data analysis__, __SQL__ in __data manipulation__ and __Power BI__ for creating __interactive dashboards__
@@ -125,6 +128,5 @@ The results of these queries were exported to Excel sheets, which were then impo
 
 - ###### *Dashboard*: [Download Dahboard from here](https://github.com/aishincp/Covid-Data-Analysis/blob/main/Covid.pbix)
 
-![image](https://github.com/user-attachments/assets/38a8a0fb-8861-479e-8a63-e2c74b24749a)
 
 
