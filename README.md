@@ -15,7 +15,7 @@ The project idea was inspired by the need to better understand the global impact
 ## 3. Data Collection
 #### Data Source
 - ###### *Description*:
-  The dataset was sources from ["Our World in Data"](https://ourworldindata.org/coronavirus), which provides extensive information on COVID-19 cases, deaths, vaccinations, cases, tests and many more related metrics globally.
+  The dataset was sourced from ["Our World in Data"](https://ourworldindata.org/coronavirus), which provides extensive information on COVID-19 cases, deaths, vaccinations, cases, tests and many more related metrics globally.
 - ###### *File Format*:
   __Microsoft Excel__
 
@@ -23,14 +23,14 @@ The project idea was inspired by the need to better understand the global impact
 - ###### *Initial Data*:
   The dataset columns included as: __Add screenshot of the dataset first five columns and also columns__
 - ###### *Filtering**:
-  Focused on COVID-19 deaths, cases and vaccinations, I filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostl contains missing values.
+  Focused on COVID-19 deaths, cases and vaccinations, filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostly contains missing values.
 
 ## 4. SQL Queries and Data Manipulation
 #### Database Setup:
 - ###### *Environment Setup*:
   __SQL Server Management Studio (SSMS)__
 - ###### *Database*:
-  Created a database named 'PortfolioProjects' with tables for 'CovidDeathsLatest' and 'CovidVaccinationsLatest'.
+  Created a database named as 'PortfolioProjects' with tables for 'CovidDeathsLatest' and 'CovidVaccinationsLatest'.
 
 ![image](https://github.com/user-attachments/assets/9c600f38-2cfb-43a5-a228-dfe6ed96f7e7)
 
