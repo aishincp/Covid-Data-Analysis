@@ -19,4 +19,75 @@ The project idea was inspired by the need to better understand the global impact
 - **Filtering**: Focused on COVID-19 deaths, cases and vaccinations, I filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostl contains missing values.
 
 ## 4. SQL Queries and Data Manipulation
+#### Database Setup:
+- **Environment Setup**: SQL Server Management Studio (SSMS)
+- **Database**: Created a database named 'PortfolioProjects' with tables for 'CovidDeathsLatest' and 'CovidVaccinationsLatest'.
 
+![image](https://github.com/user-attachments/assets/9c600f38-2cfb-43a5-a228-dfe6ed96f7e7)
+
+#### Key SQL Queries:
+- ###### **Total Deaths Worldwide**:
+  ```
+  Select Sum(new_deaths) as OverallDeaths
+  From PortfolioProjects..CovidDeathsLatest
+  Where continent is not null
+    and location not in ('World', 'International', 'Lower middle income', 'Upper middle income', 'High income', 'Low income', 'European Union')
+  ```
+- ###### **Overall Death Rate Worldwide**:
+  ```
+   Select 
+       Round((Max(total_deaths) * 1.0 / Max(total_cases)) * 100, 2) as DeathRateWorldwide
+   From PortfolioProjects..CovidDeathsLatest
+   Where continent is not null
+  ```
+#### Detailed Analysis Queries:
+- ###### **DeathPercentagePerContinent**:
+  ```
+  Select
+	  continent,
+	  SUM(new_cases) as total_cases, 
+	  SUM(new_deaths) as total_deaths, 
+	  SUM(CAST(new_deaths as decimal)) / NULLIF(SUM(New_Cases), 0)*100 as DeathPercentage
+  From PortfolioProjects..CovidDeathsLatest
+  Where continent is not null 
+  Group By continent
+  Order By continent;
+  ```
+- ###### **Overall People Fully Vaccinated Worldwide**:
+```
+Step 1: Identifyig latest Date Per Location
+WITH LatestDatePerLocation AS (
+    SELECT 
+        location, 
+        MAX(date) AS latest_date
+    FROM 
+        PortfolioProjects..CovidVaccinationLatest
+    WHERE 
+        continent IS NOT NULL
+        AND location NOT IN ('World', 'International', 'Lower middle income', 'Upper middle income', 'High income', 'Low income', 'European Union')
+    GROUP BY 
+        location
+),
+
+Step 2: Join the upper query to get latest Vaccination Data
+LatestVaccinationData AS (
+    SELECT 
+        a.location,
+        a.latest_date,
+        b.people_fully_vaccinated
+    FROM 
+        LatestDatePerLocation a
+    JOIN 
+        PortfolioProjects..CovidVaccinationLatest b
+    ON 
+        a.location = b.location AND a.latest_date = b.date
+)
+
+Step 3: Sum Fully Vaccinated Numbers
+SELECT 
+    SUM(people_fully_vaccinated) AS PeopleFullyVaccinatedWorldwide
+FROM 
+    LatestVaccinationData;
+```
+
+All other relevant queries can be found here [SQL Queries]()
