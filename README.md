@@ -123,6 +123,8 @@ The results of these queries were exported to Excel sheets, which were then impo
 
 - ###### *KPI Cards*: Global Deaths, Global Cases, Global Death Rate, Overall Vaccinations (Atleast One Dose), Overall People Fully Vaccinated (Both Doses)
 
-- ###### *Dashboard*: [Available Here](https://app.powerbi.com/reportEmbed?reportId=e3d68036-7c61-477f-9a86-74e9e656dd19&autoAuth=true&ctid=66c5e13f-8c43-4359-b2e8-51775c6d298d)
+- ###### *Dashboard*: [Download Dahboard from here](https://github.com/aishincp/Covid-Data-Analysis/blob/main/Covid.pbix)
 
 ![image](https://github.com/user-attachments/assets/38a8a0fb-8861-479e-8a63-e2c74b24749a)
+
+
