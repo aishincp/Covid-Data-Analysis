@@ -90,4 +90,10 @@ FROM
     LatestVaccinationData;
 ```
 
-All other relevant queries can be found here [SQL Queries]()
+All other relevant queries can be found here [SQL Queries](https://github.com/aishincp/Covid-Data-Analysis/blob/main/CovidDeathsQuery_New.sql)
+
+#### Saving Results:
+The results of these queries were exported to Excel sheets, which were then imported into Power BI for visualization.
+
+
+## 5. Data Visualization in Power BI
