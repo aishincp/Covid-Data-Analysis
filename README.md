@@ -10,18 +10,21 @@ This project involves comprehensive analysis and visualization of global COVID-1
 To analyze global COVID-19 data and provide insightful visualizations that can help in understanding the pandemic's impact across different regions.
 
 ## 2. Inspiration & Motivation
-The project idea was inspired by the need to better understand the global impact of COVID-19 and to demonstrate my SQL, Power BI, and data analysis skills in real-world scenarios. The aim is to create a project that only analyzed COVID-19 data but also along with that visualized it in a way that could easily be interpreted by various stakeholders.
+The project idea was inspired by the need to better understand the global impact of COVID-19 and to demonstrate my SQL, Power BI, and data analysis skills in real-world scenarios. The aim was to create a project that not only analyzed COVID-19 data but also visualized it in a way that could be easily interpreted by various stakeholders.
 
 ## 3. Data Collection
 #### Data Source
 - ###### *Description*:
-  The dataset was sourced from ["Our World in Data"](https://ourworldindata.org/coronavirus), which provides extensive information on COVID-19 cases, deaths, vaccinations, cases, tests and many more related metrics globally.
+  The dataset was sourced from ["Our World in Data"](https://ourworldindata.org/coronavirus), which provides extensive information on COVID-19 cases, deaths, vaccinations, tests, and many other related metrics globally.
 - ###### *File Format*:
   __Microsoft Excel__
 
 #### Data Filtering and Processing:
 - ###### *Initial Data*:
-  The dataset columns included as: __Add screenshot of the dataset first five columns and also columns__
+  The dataset columns included:
+
+  ![image](https://github.com/user-attachments/assets/48d8c620-a0b9-4491-85c1-8b591bcd1c69)
+
 - ###### *Filtering**:
   Focused on COVID-19 deaths, cases and vaccinations, filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostly contains missing values.
 
@@ -126,7 +129,7 @@ The results of these queries were exported to Excel sheets, which were then impo
 
 - ###### *KPI Cards*: Global Deaths, Global Cases, Global Death Rate, Overall Vaccinations (Atleast One Dose), Overall People Fully Vaccinated (Both Doses)
 
-- ###### *Dashboard*: [Download Dahboard from here](https://github.com/aishincp/Covid-Data-Analysis/blob/main/Covid.pbix)
+- ###### *Dashboard*: [Download Dashboard from here](https://github.com/aishincp/Covid-Data-Analysis/blob/main/Covid.pbix)
 
 
 
