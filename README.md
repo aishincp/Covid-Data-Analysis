@@ -26,7 +26,7 @@ The project idea was inspired by the need to better understand the global impact
   ![image](https://github.com/user-attachments/assets/48d8c620-a0b9-4491-85c1-8b591bcd1c69)
 
 - ###### *Filtering**:
-  Focused on COVID-19 deaths, cases and vaccinations, filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostly contains missing values.
+  Focused on COVID-19 deaths, cases and vaccinations, filtered the data to include relevant columns and removed any aggregate data like 'World', 'International', or income-based groupings, which mostly contained missing or incorrect values.
 
 ## 4. SQL Queries and Data Manipulation
 #### Database Setup:
@@ -114,7 +114,7 @@ The results of these queries were exported to Excel sheets, which were then impo
 - ###### *Tools Used*:
   __Microsoft Power BI Desktop__
 - ###### *Objective*:
-  Power BI is used to create interactive covid analysis dashboard that visually represent the data insights derived from above SQL queries.
+  Power BI was used to create an interactive COVID analysis dashboard that visually represents the data insights derived from the above SQL queries.
 
 #### b. Power BI Setup:
 - ###### *Importing Data*:
